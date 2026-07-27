@@ -2,17 +2,17 @@
 
 # 🏙️ Smart Community Help Hub
 
-### AI-Powered Civic Issue Reporting Platform
+**Report local issues. Get them seen. Get them fixed.**
 
-Report local issues. Get them seen. Get them fixed.
+An AI-powered civic reporting platform that turns scattered community complaints into an organized, trackable public record.
 
 ![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js) ![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase) ![Gemini](https://img.shields.io/badge/Google_Gemini-AI-blueviolet)
 
 🚀 [Live Demo](https://smart-community-help-hub.vercel.app/) · 📂 [GitHub Repository](https://github.com/Eman-Nisar-Ahmad-dev/smart-community-help-hub)
 
 </div>
-
 ---
+
 
 ## 📖 Table of Contents
 - [Overview](#-overview)
