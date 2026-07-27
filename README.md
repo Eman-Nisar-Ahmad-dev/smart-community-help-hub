@@ -36,7 +36,11 @@ People regularly notice problems in their neighborhood but have no clear way to 
 **Built for**: residents of any neighborhood who want to report local civic issues, and community members who want visibility into what's being reported and resolved nearby.
 
 ## 🔗 Live URL
-**[https://smart-community-help-hub.vercel.app](https://smart-community-help-hub.vercel.app)**
+
+**Production Deployment (Vercel):** [https://smart-community-help-hub.vercel.app](https://smart-community-help-hub.vercel.app)
+
+**GitHub Repository:** [https://github.com/Eman-Nisar-Ahmad-dev/smart-community-help-hub](https://github.com/Eman-Nisar-Ahmad-dev/smart-community-help-hub)
+
 
 ## ✨ Features
 
