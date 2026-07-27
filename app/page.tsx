@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import Toast from './components/Toast'
+import { compressImage } from '@/lib/compressImage'
 
 export default function Home() {
   const [title, setTitle] = useState('')
@@ -19,13 +20,13 @@ export default function Home() {
 
     try {
       let photoUrl = null
-
-      if (photo) {
-        const cleanName = photo.name.replace(/[^a-zA-Z0-9.]/g, '_')
-        const fileName = `${Date.now()}-${cleanName}`
-        const { data: uploadData, error: uploadError } = await supabase.storage
-          .from('report-photos')
-          .upload(fileName, photo)
+if (photo) {
+  const compressedPhoto = await compressImage(photo)
+  const cleanName = compressedPhoto.name.replace(/[^a-zA-Z0-9.]/g, '_')
+  const fileName = `${Date.now()}-${cleanName}`
+  const { data: uploadData, error: uploadError } = await supabase.storage
+    .from('report-photos')
+    .upload(fileName, compressedPhoto)
 
         if (uploadError) throw uploadError
 
