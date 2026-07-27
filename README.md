@@ -66,7 +66,6 @@ People regularly notice problems in their neighborhood but have no clear way to 
 | About |
 |---|
 | ![About](screenshots/about.png) |
-| About |
 
 ## 🤖 The AI Feature
 
