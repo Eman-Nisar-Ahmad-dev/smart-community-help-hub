@@ -123,25 +123,32 @@ flowchart TD
 ## 🚀 How to Run This Project Locally
 
 ### Prerequisites
-- Node.js installed
-- A Supabase account and project
-- A Google Gemini API key
+- Node.js (v18+) installed
+- A [Supabase](https://supabase.com) account and project
+- A [Google Gemini API key](https://aistudio.google.com)
 
-### Setup
+### 1️⃣ Clone & Install
 ```bash
 git clone https://github.com/Eman-Nisar-Ahmad-dev/smart-community-help-hub.git
 cd smart-community-help-hub
 npm install
 ```
 
+### 2️⃣ Configure Environment Variables
 Create a `.env.local` file in the root directory:
 
+```env
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 GEMINI_API_KEY=your_gemini_api_key
 NEXT_PUBLIC_ADMIN_PASSWORD=your_chosen_admin_password
+```
 
-Set up the database — run this SQL in the Supabase SQL Editor:
+> ⚠️ **Never commit `.env.local`** — it's already excluded via `.gitignore`.
+
+### 3️⃣ Set Up the Database
+Run this SQL in the Supabase **SQL Editor**:
+
 ```sql
 create table reports (
   id uuid default gen_random_uuid() primary key,
@@ -164,14 +171,25 @@ create table report_updates (
 );
 ```
 
-Create a public Storage bucket named `report-photos` in Supabase, then run:
+### 4️⃣ Set Up Storage
+Create a **public** Storage bucket named `report-photos` in Supabase.
+
+### 5️⃣ Run the App
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000).
+Open **[http://localhost:3000](http://localhost:3000)** 🎉
+
+---
 
 ## 🔐 Admin Access
-The admin panel is available at `/admin`, protected by the password set in `NEXT_PUBLIC_ADMIN_PASSWORD`. It allows updating any report's status (Pending / In Progress / Resolved), which is automatically logged to that report's Activity Timeline.
+
+| | |
+|---|---|
+| **URL** | `/admin` |
+| **Auth** | Password set via `NEXT_PUBLIC_ADMIN_PASSWORD` |
+| **Capability** | Update any report's status (Pending → In Progress → Resolved) |
+| **Side effect** | Every change is automatically logged to that report's Activity Timeline |
 
 ## 🗺️ Upcoming Work
 
@@ -185,8 +203,8 @@ The admin panel is available at `/admin`, protected by the password set in `NEXT
 
 ## 👤 Author
 **Eman Nisar Ahmad**
-BS Information Technology Student
-GitHub: [@Eman-Nisar-Ahmad-dev](https://github.com/Eman-Nisar-Ahmad-dev)
+BS Information Technology Student 
+- GitHub: [@Eman-Nisar-Ahmad-dev](https://github.com/Eman-Nisar-Ahmad-dev)
 
 ---
 
