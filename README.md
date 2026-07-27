@@ -184,6 +184,7 @@ Open **[http://localhost:3000](http://localhost:3000)** 🎉
 
 ## 🔐 Admin Access
 
+| Field | Value |
 |---|---|
 | **URL** | `/admin` |
 | **Auth** | Password set via `NEXT_PUBLIC_ADMIN_PASSWORD` |
@@ -192,18 +193,19 @@ Open **[http://localhost:3000](http://localhost:3000)** 🎉
 
 ## 🗺️ Upcoming Work
 
-- **User Authentication** — allow residents to create accounts, track their own submitted reports, and receive notifications when status changes
-- **Map View** — plot all reports on an interactive map using real GPS coordinates instead of manually typed area names
-- **Push/Email Notifications** — notify the original reporter automatically when an admin updates their report's status
-- **Multi-Admin Roles** — replace the single shared admin password with per-department accounts (e.g., a Water Department admin only sees Water reports)
-- **Public API** — expose a read-only API so local government systems could integrate directly with report data
-- **Duplicate Report Detection** — use AI to flag when a new report likely describes the same issue as an existing one, and merge upvotes automatically
-- **Multi-language Support** — allow reports and the AI rewrite to be submitted/generated in Urdu as well as English
+- [ ] **User Authentication** — allow residents to create accounts, track their own submitted reports, and receive notifications when status changes
+- [ ] **Map View** — plot all reports on an interactive map using real GPS coordinates instead of manually typed area names
+- [ ] **Push/Email Notifications** — notify the original reporter automatically when an admin updates their report's status
+- [ ] **Multi-Admin Roles** — replace the single shared admin password with per-department accounts (e.g., a Water Department admin only sees Water reports)
+- [ ] **Public API** — expose a read-only API so local government systems could integrate directly with report data
+- [ ] **Duplicate Report Detection** — use AI to flag when a new report likely describes the same issue as an existing one, and merge upvotes automatically
+- [ ] **Multi-language Support** — allow reports and the AI rewrite to be submitted/generated in Urdu as well as English
+## 👤 Author & Acknowledgments
 
-## 👤 Author
 **Eman Nisar Ahmad**
-BS Information Technology Student 
-- GitHub: [@Eman-Nisar-Ahmad-dev](https://github.com/Eman-Nisar-Ahmad-dev)
+BS Information Technology Student & Full-Stack Developer
+
+GitHub: [@Eman-Nisar-Ahmad-dev](https://github.com/Eman-Nisar-Ahmad-dev)
 
 ---
 
