@@ -41,7 +41,6 @@ People regularly notice problems in their neighborhood but have no clear way to 
 
 **GitHub Repository:** [https://github.com/Eman-Nisar-Ahmad-dev/smart-community-help-hub](https://github.com/Eman-Nisar-Ahmad-dev/smart-community-help-hub)
 
-
 ## ✨ Features
 
 | Category | What it does |
@@ -95,6 +94,31 @@ This runs server-side via a Next.js API route (`/api/analyze`), keeping the API 
 | Google Gemini (`gemini-3.5-flash-lite`) | AI categorization & complaint rewriting |
 | Vercel | Hosting & deployment |
 | Git & GitHub | Version control |
+
+## 🏗️ Architecture
+
+```mermaid
+flowchart TD
+    A[User Browser] -->|Submit Report| B[Next.js Frontend]
+    B -->|Insert Report| C[(Supabase Database)]
+    B -->|Upload Photo| D[(Supabase Storage)]
+    B -->|POST /api/analyze| E[Next.js API Route]
+    E -->|Categorize & Rewrite| F[Google Gemini AI]
+    F -->|JSON Response| E
+    E -->|Save ai_category & ai_complaint| C
+    C -->|Fetch Reports| G[Reports Feed / Stats / Detail Pages]
+    H[Admin Panel] -->|Update Status| C
+    H -->|Log Change| I[(report_updates Table)]
+    G --> A
+```
+
+**Flow summary:**
+1. A user submits a report (title, description, area, photo) through the Next.js frontend.
+2. The photo is compressed client-side and uploaded to **Supabase Storage**.
+3. The raw text is sent to a secure **Next.js API route** (`/api/analyze`), which calls **Google Gemini AI** to categorize the issue and rewrite it professionally.
+4. Both the original data and the AI-generated fields are saved to the **Supabase Database**.
+5. The **Reports Feed**, **Report Detail**, and **Stats Dashboard** pages all read live data directly from Supabase.
+6. The **Admin Panel** allows status updates, which are simultaneously logged to a separate `report_updates` table, powering each report's Activity Timeline.
 
 ## 🚀 How to Run This Project Locally
 
