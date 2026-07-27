@@ -2,15 +2,16 @@
 
 # 🏙️ Smart Community Help Hub
 
-**Report local issues. Get them seen. Get them fixed.**
+### AI-Powered Civic Issue Reporting Platform
 
-An AI-powered civic reporting platform that turns scattered community complaints into an organized, trackable public record.
+Report local issues. Get them seen. Get them fixed. An AI-powered platform that turns scattered community complaints into an organized, trackable public record — with automatic categorization, professional complaint rewriting, and full status tracking.
 
-![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js) ![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase) ![Gemini](https://img.shields.io/badge/Google_Gemini-AI-blueviolet)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-🚀 [Live Demo](https://smart-community-help-hub.vercel.app/) · 📂 [GitHub Repository](https://github.com/Eman-Nisar-Ahmad-dev/smart-community-help-hub)
+🚀 [**Live Demo**](https://smart-community-help-hub.vercel.app/) · 📂 [**GitHub Repository**](https://github.com/Eman-Nisar-Ahmad-dev/smart-community-help-hub) · ℹ️ [**About the Project**](#-overview)
 
 </div>
+
 ---
 
 
