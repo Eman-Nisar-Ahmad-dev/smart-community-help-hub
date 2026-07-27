@@ -184,7 +184,6 @@ Open **[http://localhost:3000](http://localhost:3000)** 🎉
 
 ## 🔐 Admin Access
 
-| | |
 |---|---|
 | **URL** | `/admin` |
 | **Auth** | Password set via `NEXT_PUBLIC_ADMIN_PASSWORD` |
