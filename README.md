@@ -46,7 +46,6 @@ This runs server-side via a Next.js API route (`/api/analyze`), keeping the API 
 - **Version Control**: Git & GitHub
 
 ## 📸 Screenshots
-*(Insert 3+ screenshots here — see instructions below)*
 
 ![Home page](screenshots/home.png)
 ![Reports feed](screenshots/reports.png)
@@ -71,12 +70,12 @@ This runs server-side via a Next.js API route (`/api/analyze`), keeping the API 
    npm install
 ```
 3. Create a `.env.local` file in the root directory with:
-
+```bash
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 GEMINI_API_KEY=your_gemini_api_key
 NEXT_PUBLIC_ADMIN_PASSWORD=your_chosen_admin_password
-
+```
 4. Set up the Supabase database — run this SQL in the Supabase SQL Editor:
 ```sql
    create table reports (
